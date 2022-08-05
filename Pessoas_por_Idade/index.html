@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <header>
@@ -18,7 +19,7 @@
                 <input type="number" name="nasci" id="inasci" required>
             </p>
 
-            <p>
+            <p><!--OBS: name com o mesmo valor no type radio-->
                 Sexo: 
                 <input type="radio" name="sex" id="im">
                 <label for="im">Maculino</label>
@@ -27,13 +28,18 @@
                 <label for="if">Feminino</label>
             </p>
 
-            <p>
+            <p class="btn">
                 <input type="button" value="Verificar" onclick="verificar()">
             </p>
         </div>
 
         <div id="resposta">
             Preenchar os dados acima para ver o resultado
+        </div>
+
+        <!--Lembrete: retirar essa div-->
+        <div id="foto">
+            <img id="imagem" src="" alt="imagem" width="500px" height="300px">
         </div>
     </section>
 
