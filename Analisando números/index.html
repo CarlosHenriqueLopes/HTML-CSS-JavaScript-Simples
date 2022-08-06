@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Analisador de números</h1>
+    </header>
+
+    <section>
+        <div>
+            <p>
+                Números entre 1 e 100: 
+                <input type="number" name="num" id="id_num" required min="1" max="100">
+                <input type="button" value="Adicionar" onclick="adn()">
+
+                <br>
+
+                <select name="analisador" id="id_analisador" size="6"></select>
+                <input type="button" value="Finalizar">
+            </p>
+        </div>
+
+        <div id="resposta">
+            olá teste
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Criado por Carlos Henrique</p>
+    </footer>
+
+    <script src='analise_num.js'></script>
+</body>
+</html>
