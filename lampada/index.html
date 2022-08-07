@@ -9,17 +9,18 @@
 <body>
     <header>
         <h1>Interaja com a lampada</h1>
+        <p>Passe o mouse sobre ela, ou click nos botões</p>
     </header>
 
     <main>
         <div class="Box_img">
-            <img src="#" alt="imagem" id="id_lampada">
+            <img src="#" alt="imagem" id="id_lampada" onmouseenter="dentro()" onmouseout="fora()">
         </div>
 
         <div>
-            <input type="button" value="Ligar" id="id_ligar">
-            ou lick nela para quebrar
-            <input type="button" value="Desligar" id="id_desligar">
+            <input type="button" value="Ligar" id="id_ligar" onclick="btn_lig()">
+            lick nela para quebrar
+            <input type="button" value="Desligar" id="id_desligar" onclick="btn_desl()">
         </div>
     </main>
 
