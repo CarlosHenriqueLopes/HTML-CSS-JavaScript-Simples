@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="estilo/style.css">
 </head>
 <body>
     <main>
@@ -12,24 +14,24 @@
             <div class="box_title">Calculando - IMC</div>
 
             <div class="inpu_name">
-                <label for="id_name">Nome: </label>
-                <input type="text" name="name" id="id_name" required>
+                <label for="id_name"></label>
+                <input type="text" name="name" id="id_name" required placeholder="Digite seu nome">
             </div>
 
             <div class="input_altura">
-                <label for="id_altura">Altura: </label>
-                <input type="number" name="name_altura" id="id_altura" required>
+                <label for="id_altura"></label>
+                <input type="number" name="name_altura" id="id_altura" required placeholder="Digitite sua altura">
             </div>
 
             <div class="input_peso">
-                <label for="id_peso">Peso: </label>
-                <input type="number" name="name_peso" id="id_peso" required>
+                <label for="id_peso"></label>
+                <input type="number" name="name_peso" id="id_peso" required placeholder="Digite seu peso">
             </div>
 
             <input type="button" value="Calcular" id="id_calcular" onclick="btn_calcular()">
-
-            <div class="box_resposta" id="id_resposta"></div>
         </div>
+        
+        <div class="box_resposta" id="id_resposta"></div>
     </main>
 
     <script src="edição.js"></script>

@@ -16,13 +16,13 @@ function btn_calcular(){
         let imc = (pe / (al * al)).toFixed(2)
 
         if (imc < 18.5){
-            resp.innerHTML = `Oi ${nome.value} seu IMC deu ${imc}<br>Resultado baixo peso` 
+            resp.innerHTML = `Oi ${nome.value} seu IMC deu ${imc}<br>Resultado: baixo peso` 
         } else if (imc >= 18.5 && imc <= 29.9){
-            resp.innerHTML = `Oi ${nome.value} seu IMC deu ${imc}<br>Resultado eutrofia`
+            resp.innerHTML = `Oi ${nome.value} seu IMC deu ${imc}<br>Resultado: eutrofia`
         } else if (imc > 29.9 && imc <=30){
-            resp.innerHTML = `Oi ${nome.value} seu IMC deu ${imc}<br>Resultado sobrepeso`
+            resp.innerHTML = `Oi ${nome.value} seu IMC deu ${imc}<br>Resultado: sobrepeso`
         } else {
-            resp.innerHTML = `Oi ${nome.value} seu IMC deu ${imc}<br>Resultado obesidade`
+            resp.innerHTML = `Oi ${nome.value} seu IMC deu ${imc}<br>Resultado: obesidade`
         }
         
     }
