@@ -18,3 +18,7 @@ function dentro(){
 function fora(){
     lampada.src = 'imagens/desligada.jpg'
 }
+
+function quebrar(){
+    lampada.src = 'imagens/quebrada.jpg'
+}

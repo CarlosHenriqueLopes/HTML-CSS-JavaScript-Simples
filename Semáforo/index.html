@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Interaja com o semáforo</h1>
+    </header>
+
+    <main>
+        <div class="box-img">
+            <img src="imagens/desligado.png" alt="imagem" id="id_img">
+        </div>
+
+        <div class="cores-semaforo">
+            <input type="button" value="Vermelho" id="id_vermelho" onclick="_vermelho()">
+            <input type="button" value="Amarelo" id="id_amarelo" onclick="_amarelo()">
+            <input type="button" value="Verde" id="verde" onclick="_verde()">
+            <input type="button" value="Piscar" id="id_piscar" onclick="_piscar()">
+        </div>
+
+        <div class="box-semaforo">
+            <input type="button" value="desligado" id="id_desligar" onclick="desligado()">
+        </div>
+    </main>
+
+    <script src="edição.js"></script>
+
+    <footer>
+        <p>&copy; Criado por Carlos Henrique</p>
+    </footer>
+</body>
+</html>
