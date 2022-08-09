@@ -18,7 +18,7 @@ class calculadora {
     }
 }
 
-let calcular = new calculadora(a, b)
+let calcular = new calculadora(op_anterior, op_digitada)
 
 // para deixar os clicks dos botoes imprimirem textos
 botoes.forEach((btns) => {
