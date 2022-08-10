@@ -50,8 +50,9 @@ body{
     text-align: center;
     margin-bottom: 150px;
     font-size: 50px;
-    color: whitesmoke;
+    color: var(--cor2);
     font-family: 'font_title';
+    text-shadow: 3px 3px 0px var(--cor5);
 }
 
 .conteiner_inputs{
