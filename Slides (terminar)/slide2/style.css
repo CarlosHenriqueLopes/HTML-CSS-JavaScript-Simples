@@ -14,7 +14,11 @@
 }
 
 .galeria_img{
-    overflow-x: auto;
+    overflow-x: auto; /*para limitar com barras de rolagem*/
+}
+
+.galeria_img::-webkit-scrollbar{
+    display: none;
 }
 
 .img_box{
@@ -52,5 +56,17 @@
 
 .seta-esquerda:hover,
 .seta-direita:hover{
+    opacity: 1;
+}
+
+.item{
+    width: 250px;
+    height: 250px;
+    flex-shrink: 0; /*para o item encolher, caso necessario*/
+    opacity: 0.5;
+    transition: 1s;
+}
+
+.img-atual{
     opacity: 1;
 }
