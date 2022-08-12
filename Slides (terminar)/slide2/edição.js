@@ -19,6 +19,10 @@ controles.forEach((cont) => {
             galeria_img = 0
         }
 
+        if (galeria_img < 0){
+            galeria_img = max_itens - 1
+        }
+
         itens.forEach((i) => i.classList.remove('img-atual'))
 
         itens[galeria_img].scrollIntoView({
