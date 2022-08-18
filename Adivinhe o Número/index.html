@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adivinhe o número</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
 </head>
 <body onload="gerarNumeroSecreto()">
     <main class="conteiner" id="tela">
@@ -15,18 +18,18 @@
         <p class="center" id="dicas">Digite um número entre 0 e 10</p>
 
         <section class="conteudo">
-            <input type="number" name="number" id="id_number" min="1" max="10" step="1" onblur="validarNumeroDigitado(this.value)" onclick="tocarMusicadeFundo(); ativarBTN()">
+            <input type="number" name="n" id="id_number" min="1" max="10" step="1" onblur="validarNumeroDigitado(this.value)" onclick="tocarMusicadeFundo(); ativarBTN()">
         </section>
 
-        <button id="id_btn" class="class_btn">
-            Chutar
-        </button>
+        <button id="id_btn" class="class_btn" onclick="jogar()">chutar</button>
 
-        <button id="id_btn_som" class="claas_btn_som" onclick="jogar()">
+        <button id="id_btn_som" class="claas_btn_som" onclick="music_on_off()"></button>
 
-        </button>
-
-        <p class="center" id="aviso" onclick="music_on_off()"></p>
+        <p class="center" id="aviso"></p>
     </main>
+
+    <audio preload src="musica/abertura-the-mentalist.mp3" id="id_som">
+
+    </audio>
 </body>
 </html>
