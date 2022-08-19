@@ -8,25 +8,32 @@ let img = window.document.querySelector('img#id_img')
 vermelho = 'imagens/vermelho.png'
 amarelo = 'imagens/amarelo.png'
 verde = 'imagens/verde.png'
+desligar = 'imagens/desligado.png'
 
 let vetor = [vermelho, amarelo, verde]
 
+function desligado(){
+    img.src = desligar
+}
+
 
 function _vermelho(){
-    img.src = 'imagens/vermelho.png'
+    img.src = vermelho
 }
 
 function _amarelo(){
-    img.src = 'imagens/amarelo.png'
+    img.src = amarelo
 }
 
 function _verde(){
-    img.src = 'imagens/verde.png'
+    img.src = verde
 }
 
 function _piscar(){
-    setInterval(function(){
-        frame ++
-        img.src = vetor[frame]
-    }, 1000);
+    setInterval(() => {
+        vermelho
+        amarelo
+        verde
+        
+    }, 1000)
 }
