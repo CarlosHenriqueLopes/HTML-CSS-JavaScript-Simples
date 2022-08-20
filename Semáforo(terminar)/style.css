@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ 
+h1{
+    text-align: center;
+    margin: 20px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cores-semaforo input[type='button']{
+    margin: 5px;
+}
+
+.box-semaforo input[type='button']{
+    padding: 0px 30px;
+    margin-top: 3px;
+}
+
+footer p{
+    align-items: center;
+    justify-content: center;
+}
