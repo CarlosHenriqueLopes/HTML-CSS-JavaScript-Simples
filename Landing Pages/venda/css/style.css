@@ -1,0 +1,50 @@
+@charset "UFT-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.navegação{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 18px 40px;
+    box-shadow: 0px 0.1px 0.5rem rgba(0, 0, 0, 0.526);
+}
+
+.logo{
+    color: red;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-decoration: none;
+    text-shadow: 1px 1px 0px black;
+}
+
+.logo span{
+    color: yellow;
+    text-shadow: 1px 1px 0px black;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    list-style: none;
+}
+
+ul li a{
+    color: red;
+    text-shadow: 0.5px 0.5px 0px black;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+ul li a:hover{
+    color: yellow;
+    text-shadow: 0.5px 0.5px 0px black;
+    transform: 10px;
+}
