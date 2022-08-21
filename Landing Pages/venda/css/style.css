@@ -46,5 +46,4 @@ ul li a{
 ul li a:hover{
     color: yellow;
     text-shadow: 0.5px 0.5px 0px black;
-    transform: 10px;
 }
