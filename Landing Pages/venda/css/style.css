@@ -41,6 +41,11 @@ ul li a{
     text-shadow: 0.5px 0.5px 0px black;
     font-size: 17px;
     font-weight: 500;
+    cursor: pointer;
+}
+
+ul i{
+    font-size: 1.5rem;
 }
 
 ul li a:hover{
