@@ -1,7 +1,7 @@
 const listas = window.document.querySelector('.lista')
 const spans = window.document.querySelector('.box_spans')
 
-function clicar(){
-    spans.classList.toggle('ativar')
+spans.addEventListener('click', () => {
     listas.classList.toggle('ativar')
-}
+    spans.classList.toggle('ativar')
+})
