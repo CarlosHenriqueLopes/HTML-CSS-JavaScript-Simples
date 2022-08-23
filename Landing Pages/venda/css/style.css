@@ -1,5 +1,15 @@
 @charset "UFT-8";
 
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+
+:root{
+    --font-katchup: 'DynaPuff', cursive;
+    --font-anton: 'Anton', sans-serif;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -14,6 +24,8 @@
 
     padding: 18px 40px;
     box-shadow: 0px 0.1px 0.5rem rgba(0, 0, 0, 0.526);
+    position: fixed;
+    width: 100%;
 }
 
 .logo{
@@ -22,6 +34,7 @@
     font-weight: 600;
     text-decoration: none;
     text-shadow: 1px 1px 0px black;
+    font-family: var(--font-katchup);
 }
 
 .logo span{
@@ -44,11 +57,90 @@ ul li a{
     cursor: pointer;
 }
 
-ul i{
-    font-size: 1.5rem;
-}
-
 ul li a:hover{
     color: yellow;
     text-shadow: 0.5px 0.5px 0px black;
+}
+
+ul i{
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.box_spans{
+    cursor: pointer;
+    display: none;
+}
+
+.bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: black;
+    border-radius: 5px;
+    margin: 5px auto;
+}
+
+.bar:nth-child(1),
+.bar:nth-child(3){
+    background-color: red;
+    box-shadow: 0.2px 0.2px 0px black;
+}
+
+.bar:nth-child(2){
+    background-color: yellow;
+    box-shadow: 0.2px 0.2px 0px black;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    width: 100vw;
+    height: 100vh;
+    padding: 0px 30px;
+}
+
+.sections_textos{
+    max-width: 37rem;
+}
+
+.sections_textos h4{
+    font-size: 1.5rem;
+    font-family: var(--font-katchup);
+    color: red;
+    text-shadow: 1px 1px 0px black;
+    margin-bottom: 1rem;
+}
+
+.sections_textos h1{
+    font-size: 4rem;
+    font-family: var(--font-katchup);
+    margin-bottom: 1rem;
+    line-height: 4rem;
+}
+
+.sections_textos p{
+    margin-bottom: 4rem;
+}
+
+.sections_textos a{
+    padding: 15px 40px;
+    background-color: red;
+    border-radius: 10px;
+    color: yellow;
+    font-size: 1.2rem;
+    font-family: var(--font-katchup);
+}
+
+.sections_textos a:hover{
+    background-color: yellow;
+    color: red;
+    transition: 0.5s;
+}
+
+.box_img{
+    max-width: 100%;
+    margin-top: 100px;
 }

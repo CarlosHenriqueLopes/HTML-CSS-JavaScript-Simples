@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+@media screen and (max-width: 785px){
+    .navegação{
+        background-color: black;
+        padding: 18px 20px;
+    }
+
+    ul{
+        display: none;
+    }
+
+    .box_spans{
+        display: block;
+    }
+
+    .ativar .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .ativar .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .ativar .bar:nth-child(3){
+        transform: translate(-8px) rotate(-45deg);
+    }
+}
