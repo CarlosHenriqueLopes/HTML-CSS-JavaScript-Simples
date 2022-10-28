@@ -10,10 +10,18 @@ body{
     background-color: grey;
 }
 
-header h1{
+header h1, p{
     text-align: center;
     margin: 30px;
     text-shadow:  1px 0px thistle;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+p{
+    font-size: 18px;
 }
 
 section{
