@@ -26,7 +26,6 @@ body{
     width: 550px;
 
     background: rgb(116, 111, 111);
-    box-shadow: 10px 10px 100px 100px rgb(20, 255, 3);
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
     border-radius: 3px;
-    border: 3px black;
 }
