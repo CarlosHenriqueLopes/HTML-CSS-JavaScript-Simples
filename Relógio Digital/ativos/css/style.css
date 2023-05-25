@@ -58,3 +58,11 @@ body{
 .relogio span.tempo{
     font-size: 15px;
 }
+
+/*efeito de contorno no texto com combra red para simular brilho*/
+.relogio, #horas, #min, #seg{
+    text-shadow: 
+        1px 1px rgb(0, 0, 0),    /*eixo x/y baixo*/
+        -1px -1px rgb(0, 0, 0),  /*eixo x/y cima*/
+        0px 0px 6px red          /*sombra*/
+}
