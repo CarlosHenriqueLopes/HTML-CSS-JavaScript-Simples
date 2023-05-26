@@ -2,8 +2,17 @@ const horas = window.document.getElementById("horas");
 const min = window.document.getElementById("min");
 const seg = window.document.getElementById("seg");
 
-const btn = window.document.getElementsByClassName("relogio");
-const conteiner = window.document.getElementsByClassName("relogio");
+let btn = window.document.getElementsByClassName("btn");
+const conteiner1 = window.document.getElementsByClassName("conteiner1");
+let conteiner2 = window.document.getElementsByClassName("conteiner2");
+
+btn.addEventListener("click", function(){
+    if (conteiner2.style.display === "none"){
+        conteiner2.style.display = "block"
+    } else {
+        conteiner2.style.display = "none"
+    }
+})
 
 
 const relogio = setInterval(function time(){
