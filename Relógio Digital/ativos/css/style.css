@@ -14,10 +14,23 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 
     height: 100vh;
     background: linear-gradient(rgb(125, 123, 129), rgb(123, 120, 137), rgb(103, 100, 116));
 }
+
+/* fixando o botão */
+button{
+    position: absolute;
+    top: 30%;
+}
+
+/* para deixar a frase escondida, ate o boão funcionar pelo js */
+.conteiner1{
+    display: none;
+}
+
 
 .relogio{
     display: flex;
